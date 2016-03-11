@@ -4,34 +4,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Insert title here</title> 
 
 </head>
 <body>
+<h1>Welcome to this web!</h1>
 
-	<form action="springmvc/testJsonParams" method="post">
+<form action="springmvc/testJsonParams" method="post">
 	
 		JSON:<input type="text" name="jsonStr"/>
 		<input type="submit" value="submit"/>
 		
 	</form>
-	
-
-<form action="springmvc/testPOJO" method="post">
-	username:<input type="text" name="username"/>
-	<br>
-	password:<input type="password" name="password"/>
-	<br>
-	email:<input type="text" name="email"/>
-	<br>
-	age:<input type="text" name="age"/>
-	<br>
-	city:<input type="text" name="address.city"/>
-	<br>
-	province:<input type="text" name="address.province"/>
-	<br>
-	<input type="submit" value="submit"/>
+	<form action="./find/jsonbyid" method="get">
+	<p>id:<input type="text" name="id">
+	<input type="submit" value="Submit"/>
+		
 	</form>
 
+		
+	</form>
 </body>
+
 </html>

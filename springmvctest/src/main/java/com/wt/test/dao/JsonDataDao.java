@@ -5,7 +5,6 @@ import org.bson.Document;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
-import com.wt.test.entities.User;
 
 public class JsonDataDao {
 
@@ -18,17 +17,6 @@ public class JsonDataDao {
 		Document document=Document.parse(json);
 		mc.insertOne(document);
 		System.out.println("save ("+json+") success");
-	}
-	
-	public void saveData(User user) throws Exception{
-		MongoCollection	mc=MongoDbCollection.getDBCollection("spring_test");
-		Document document=new Document();
-		document.put("username", user.getUsername());
-		document.put("password", user.getPassword());
-		document.put("age", user.getAge());
-		document.put("email", user.getEmail());
-		mc.insertOne(document);
-		System.out.println("save ("+user.toString()+") success");
 	}
 	
 	public String findDataID(Document document) throws Exception{

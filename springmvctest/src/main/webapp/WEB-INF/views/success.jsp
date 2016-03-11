@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h2>success</h2>
-	id:${requestScope.id}
+	id=${requestScope.id}
 	<br>
 
 </body>
